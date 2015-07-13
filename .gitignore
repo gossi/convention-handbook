@@ -1,0 +1,8 @@
+*.bbl
+*.aux
+*.synctex.gz
+Convention Handbook.pdf
+*.log
+*.blg
+*.out
+*.toc
