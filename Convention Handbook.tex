@@ -1,23 +1,20 @@
 \documentclass[11pt]{report}
 
-\usepackage{ifpdf}
-\ifpdf 
-    \usepackage[pdftex]{graphicx}   % to include graphics
-    \pdfcompresslevel=9 
-    \usepackage[pdftex,     % sets up hyperref to use pdftex driver
-            plainpages=false,   % allows page i and 1 to exist in the same document
-            breaklinks=true,    % link texts can be broken at the end of line
-            colorlinks=true,
-            pdftitle=Convention Handbook
-            pdfauthor=Thomas Gossmann
-           ]{hyperref} 
-    \usepackage{thumbpdf}
-\else 
-    \usepackage{graphicx}       % to include graphics
-    \usepackage{hyperref}       % to simplify the use of \href
-\fi 
+\usepackage[pdftex]{graphicx}   % to include graphics
+\pdfcompresslevel=9 
+\usepackage[pdftex,     % sets up hyperref to use pdftex driver
+	plainpages=false,   % allows page i and 1 to exist in the same document
+	breaklinks=true,    % link texts can be broken at the end of line
+	colorlinks=true,
+	pdftitle=Unicycle Convention Handbook
+	pdfauthor=Thomas Gossmann
+]{hyperref} 
+\usepackage{thumbpdf}
 
-\title{Convention Handbook}
+% fullref
+\newcommand{\fullref}[1]{\autoref{#1} \nameref{#1}}
+
+\title{Unicycle Convention Handbook}
 \author{Thomas Gossmann}
 \date{}
 
@@ -38,9 +35,14 @@ convention.
 
 \chapter{Organization}
 
+This chapter focusses on the organizing things that happens mostly before the 
+convention starts.
+
 \section{Organizing Order}
 
-Let's roughly go through the steps for organizing a small unicycle convention.
+Organizing a convention is not a linear process. Some tasks depend on others and 
+some are interdependent. Although here is a rough order in which these steps may 
+approached.
 
 \begin{enumerate}
 	\item There are two items you can parallelize at the beginning
@@ -61,9 +63,12 @@ The first thing when starting to organize a convention is to run a feasibility
 study to check for yourself if you verify as a host. This includes:
 
 \begin{itemize}
-	\item checking the location
-	\item talking to friends ask them if they would support you and join the team
-	\item check your organizing structures whether you are legally eligible
+	\item checking the location - if there is any and if validates as a host for 
+	your expected amount of audience.
+	\item talking to friends ask them if they would support you and join the 
+	organizing team.
+	\item check your organizing structures whether you are legally eligible for 
+	hosting the convention.
 \end{itemize}
 
 \section{Team Up!}
@@ -75,48 +80,73 @@ Some important positions are:
 	\item [Purchase] \hfill \\
 	A person or a team that handles all the purchases for materials that are needed 
 	for such a convention.
-	\item [Accomodation] \hfill \\
-	A team that organizes all the on-site accomodation.
+	\item [Accommodation] \hfill \\
+	A team that organizes all the on-site accommodation.
 	\item [Account-Manager] \hfill \\
 	A person keeping track of all the registration fees.
+	\item [Online Presence] \hfill \\
+	A person who is responsible for the online presence and takes care of the 
+	online registration.
 \end{description}
-
 Remark: Multiple positions can be filled by the same person.
+
+\subsection{Helper Plan}
+You should create a plan when which tasks need to be done. You can print this 
+schedule and let helpers fill in their own name to claim those tasks. Your 
+helpers need to have a task assigned, anyway they run around like beheaded 
+chickens.
 
 \section{Locations}
 
 Make sure your convention has good locations, here's what you'd better be 
 looking for.
 
-\subsection{Riding location / Gym}
+\subsection{Riding Location / Gym}
 
-A riding location is a must. For freestyle events preferrably a gym. For outdoor 
-events good spots are required.
+A riding location is a must. For freestyle events preferably a gym. For outdoor 
+events good spots are required. Make sure the locations can host the expected 
+amount of riders plus audience.
 
-\subsection{Accomodation}
-Athletes need to sleep somewhere. Most of them are comfortable with the sleeping 
-mattress and their sleeping bag, just provide them a stay for that. However, 
+\subsection{Accommodation}
+Athletes need to sleep somewhere. Most of them are comfortable with their 
+sleeping mattress and sleeping bag, just provide them a stay for that. However, 
 depending on your facilities you might provide them different options during 
 registration. Here are some possibilities:
 
 \begin{description}
 	\item [Sleeping Hall/Gym] \hfill \\ 
-		This would be the easiest type of accomodation from the perspective of a 
+		This would be the easiest type of accommodation from the perspective of a 
 		participant. Offering sleeping places may also be included in the 
 		registration fee.
 	\item [External] \hfill \\
-		Accomodation can forwarded to external suppliers. You can make a deal with 
-		those on the expected over-night guests to get a discount for your 
+		Accommodation can forwarded to external suppliers. You can make a deal 
+		with those on the expected over-night guests to get a discount for your 
 		participants (e.g. Youth hostels or hotels). Depending on your external 
 		suppliers and provided options by them, include them in the registration 
 		with their respective additional costs.
 \end{description}
 
-\section{Suppliers}
-
 \section{Food \& Drinks}
 Athletes need to eat and drink.
 
+\subsection{Food}
+Food includes three meals per day: breakfast, lunch and dinner. What you offer 
+may depend on your provided accommodation. If you house all participants for an 
+over-night stay you should at least provide breakfast. Lunch and dinner can be 
+outsourced to a party service of your choice. See \fullref{sec:Accounting}
+with estimates for required calculations on those.
+
+\subsection{Drinks}
+If you decided to provide drinks, then make sure you have enough water 
+(without sparkles). Provide cups and pencils, so participants claim one, write 
+their name on it and use it throughout the day. Other drinks are bonus and are 
+experienced as a present of those kind hosts.
+
+\section{Insurance}
+
+Make sure, you checked the insurance thing. It may be enough to hand this off to 
+every participant. When you have rented gyms or any other buildings, check that 
+you comply with the fire emergency rules. 
 
 \chapter{Convention Programm}
 
@@ -126,6 +156,7 @@ with each other on shared activities. They are good as an addendum to your
 convention or even can turn up to be the whole concept.
 
 \chapter{Accounting}
+\label{sec:Accounting}
 
 \chapter{Freestyle Convention}
 
@@ -160,7 +191,8 @@ That leads us to the creation of guidelines for a freestyle convention:
 	\item Host provides drinks (water is absolutely fine; more is bonus)
 	\item A weekend full of workshops, because riders are coming to learn from 
 	others
-	\item No official competitions (though, small and funny ones in form of workshops are allowed)
+	\item No official competitions (though, small and funny ones in form of 
+	workshops are allowed)
 \end{itemize}
 
 \end{document}

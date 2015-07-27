@@ -61,12 +61,12 @@
         </metadata>
     </databaseInfo>
     <object type="UISETTINGS" id="z102">
-        <attribute name="pdfviewscrollrect" type="string">{{0, 508.00424628461224}, {620, 964.88322717182109}}</attribute>
+        <attribute name="pdfviewscrollrect" type="string">{{4.8326422229040735e-14, 3247.0306122451211}, {620, 927.46938775395483}}</attribute>
         <attribute name="showpdfthumbnails" type="bool">0</attribute>
         <attribute name="selectedcontrolstab" type="int16">0</attribute>
         <attribute name="maxoutlinedepth" type="int16">7</attribute>
         <attribute name="logoutputlevel" type="int16">0</attribute>
-        <attribute name="editorwidth" type="float">730</attribute>
+        <attribute name="editorwidth" type="float">711</attribute>
         <attribute name="controlswidth" type="float">220</attribute>
         <attribute name="consoleview" type="int16">0</attribute>
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z103"></relationship>
@@ -97,12 +97,12 @@
     </object>
     <object type="TEXFILE" id="z105">
         <attribute name="wasopen" type="bool">0</attribute>
-        <attribute name="visiblerect" type="string">{{0, 1958}, {687, 692}}</attribute>
-        <attribute name="lasteditdate" type="date">458523685.87094801664352416992</attribute>
+        <attribute name="visiblerect" type="string">{{0, 37}, {674, 707}}</attribute>
+        <attribute name="lasteditdate" type="date">458568230.34208697080612182617</attribute>
         <attribute name="istext" type="bool">1</attribute>
-        <attribute name="fileloaddate" type="date">458523707.21298497915267944336</attribute>
+        <attribute name="fileloaddate" type="date">458568231.11498898267745971680</attribute>
         <attribute name="extension" type="string">tex</attribute>
-        <attribute name="cursor" type="string">{5456, 0}</attribute>
+        <attribute name="cursor" type="string">{428, 0}</attribute>
         <attribute name="sortindex" type="int32">0</attribute>
         <attribute name="name" type="string">Convention Handbook.tex</attribute>
         <attribute name="isexpanded" type="bool">0</attribute>
