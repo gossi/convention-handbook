@@ -61,12 +61,12 @@
         </metadata>
     </databaseInfo>
     <object type="UISETTINGS" id="z102">
-        <attribute name="pdfviewscrollrect" type="string">{{4.8326422229040735e-14, 3247.0306122451211}, {620, 927.46938775395483}}</attribute>
+        <attribute name="pdfviewscrollrect" type="string">{{0, 9111.9467213070493}, {620, 931.27049180322865}}</attribute>
         <attribute name="showpdfthumbnails" type="bool">0</attribute>
         <attribute name="selectedcontrolstab" type="int16">0</attribute>
         <attribute name="maxoutlinedepth" type="int16">7</attribute>
         <attribute name="logoutputlevel" type="int16">0</attribute>
-        <attribute name="editorwidth" type="float">711</attribute>
+        <attribute name="editorwidth" type="float">713</attribute>
         <attribute name="controlswidth" type="float">220</attribute>
         <attribute name="consoleview" type="int16">0</attribute>
         <relationship name="project" type="1/1" destination="PROJECT" idrefs="z103"></relationship>
@@ -79,14 +79,14 @@
         <relationship name="selected" type="1/1" destination="FILE" idrefs="z105"></relationship>
         <relationship name="settings" type="1/1" destination="SETTINGS" idrefs="z104"></relationship>
         <relationship name="uisettings" type="1/1" destination="UISETTINGS" idrefs="z102"></relationship>
-        <relationship name="items" type="0/0" destination="PROJECTITEM" idrefs="z105 z107"></relationship>
+        <relationship name="items" type="0/0" destination="PROJECTITEM" idrefs="z107 z105"></relationship>
     </object>
     <object type="SETTINGS" id="z104">
         <attribute name="stoponerror" type="bool">1</attribute>
         <attribute name="showstatusbar" type="bool">1</attribute>
         <attribute name="outputdirectory" type="string"></attribute>
         <attribute name="openconsole" type="bool">0</attribute>
-        <attribute name="ncompile" type="int16">3</attribute>
+        <attribute name="ncompile" type="int16">1</attribute>
         <attribute name="language" type="string">de</attribute>
         <attribute name="enginename" type="string">pdflatex</attribute>
         <attribute name="dops2pdf" type="bool">1</attribute>
@@ -97,12 +97,12 @@
     </object>
     <object type="TEXFILE" id="z105">
         <attribute name="wasopen" type="bool">0</attribute>
-        <attribute name="visiblerect" type="string">{{0, 37}, {674, 707}}</attribute>
-        <attribute name="lasteditdate" type="date">458568230.34208697080612182617</attribute>
+        <attribute name="visiblerect" type="string">{{0, 1231}, {685, 707}}</attribute>
+        <attribute name="lasteditdate" type="date">460139089.14575701951980590820</attribute>
         <attribute name="istext" type="bool">1</attribute>
-        <attribute name="fileloaddate" type="date">458568231.11498898267745971680</attribute>
+        <attribute name="fileloaddate" type="date">460139089.59178197383880615234</attribute>
         <attribute name="extension" type="string">tex</attribute>
-        <attribute name="cursor" type="string">{428, 0}</attribute>
+        <attribute name="cursor" type="string">{1912, 0}</attribute>
         <attribute name="sortindex" type="int32">0</attribute>
         <attribute name="name" type="string">Convention Handbook.tex</attribute>
         <attribute name="isexpanded" type="bool">0</attribute>

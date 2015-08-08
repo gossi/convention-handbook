@@ -14,20 +14,31 @@
 % fullref
 \newcommand{\fullref}[1]{\autoref{#1} \nameref{#1}}
 
+% a bit styling
+\usepackage{enumitem}
+\setlist[itemize]{parsep=0pt}
+\setlist[enumerate]{parsep=0pt}
+\setlist[description]{parsep=0.5\baselineskip}
+\setlength\parindent{0pt}
+
+% metadata
 \title{Unicycle Convention Handbook}
 \author{Thomas Gossmann}
 \date{}
 
 \begin{document}
 \maketitle
+
+\setcounter{tocdepth}{1}
 \tableofcontents
 
 \chapter{Introduction}
 
 This is a short guide on how to run your own (small) unicycle convention (up to 
-~150 participants). This guide is split into three parts. The first contains 
+(tilde) %todo tilde symbol
+150 participants). This guide is split into four parts. The first contains 
 information about the organization of such a convention and what you as a host 
-must do. Second part is about the convention itself. What program is running and 
+must do. Second part is about the convention itself. How your program looks and 
 what you need for it. Third part addresses the accounting for the convention and 
 has some numbers ready for you to calculate with. The fourth part contains the 
 specialities of a Freestyle Convention and what rules apply for such a 
@@ -48,7 +59,7 @@ approached.
 	\item There are two items you can parallelize at the beginning
 		\begin{itemize}
 			\item Feasibility study
-			\item Get your stuff together
+			\item Get your staff together
 		\end{itemize}
 	\item Find locations
 	\item Find suppliers for food & drinks
@@ -91,10 +102,10 @@ Some important positions are:
 Remark: Multiple positions can be filled by the same person.
 
 \subsection{Helper Plan}
-You should create a plan when which tasks need to be done. You can print this 
+You should create a plan which tasks need to be done. You can print this 
 schedule and let helpers fill in their own name to claim those tasks. Your 
 helpers need to have a task assigned, anyway they run around like beheaded 
-chickens.
+chickens. Make sure 
 
 \section{Locations}
 
@@ -145,10 +156,15 @@ experienced as a present of those kind hosts.
 \section{Insurance}
 
 Make sure, you checked the insurance thing. It may be enough to hand this off to 
-every participant. When you have rented gyms or any other buildings, check that 
+every participant. When you have rented gyms or other buildings, check that 
 you comply with the fire emergency rules. 
 
 \chapter{Convention Programm}
+
+\section{Competitions}
+For a small convention, choose your competitions wisely to not overload your 
+event. Make your final choice on competitions and appoint a director for each of 
+your competition who is responsible for managing it.
 
 \section{Workshops}
 Workshops are a good way to teach your participants new skills or get in contact 
@@ -158,41 +174,151 @@ convention or even can turn up to be the whole concept.
 \chapter{Accounting}
 \label{sec:Accounting}
 
+An account spreadsheet is provided to manage your financial situation along with 
+managing your participants. Here is a step-by-step tutorial on how to use it.
+
+\section{Understanding Costs}
+There are two types of costs, you must understand first, in order to work with 
+the provided spreadsheet. There is \textit{per person costs} and
+\textit{fix costs}.
+
+\begin{description}
+	\item[Per Person Costs] \hfill \\
+	Those are costs were you buy an item for a certain value and route this to the 
+	participants.
+	
+	Example: You may rent a gym for a certain amount per person (i.e. 10€/per person).
+	
+	Color for a per person costs in the sheet is a light yellow.
+	
+	\item[Fix Costs] \hfill \\
+	Those are costs that have a fixed purchase price.
+	
+	Example: You may rent a gym for a fixed price (i.e. 400€ for the weekend).
+
+	Color for a per person costs in the sheet is a light orange.
+	
+\end{description}
+
+\section{Defining Fees}
+
+The first step would be to define fee classes for your participants on the 'Fee' 
+sheet. The first class 'Staff' is already available and should be kept. Assign 
+this class for all your helpers, they don't need to pay for anything.
+
+\subsection{Modularize your Fees with Packages}
+
+It will be easier to define packages first and then combine them into classes. 
+On the 'Fee' sheet start with defining packages on the right table first. 
+Packages may be something like 'Breakfast Sa' for breakfast on saturday and a price
+in the next column. Another package may be 'Sleeping Fr to Sa'. Now these two 
+packages are of different cost types. The spreadsheet isn't clever enough to 
+assume what type of cost these packages are, so you must manually assign a 
+color. Even then, this is just for you, so you can visually inspect what type 
+those packages are.
+
+Example: The breakfast package is a fixed cost and you should give it an orange 
+background, because you don't route the costs for all the breakfast ingredients 
+to the participant. On the other hand, the sleeping option is a per person 
+costs, because you may rent the sleeping gym for 10€ per person.
+
+\section{Building up your Classes}
+
+Now that you defined your packages it is time to build classes from them. Give 
+the package a descriptive name and then you must calculate two prices from it.
+
+\begin{description}
+	\item [Price] \hfill \\
+	This is the final price a participant will pay. Include the the base price on 
+	top of the two tables plus the packages you defined earlier.
+	
+	% TODO: squarebraket spacing look ugly
+	\item [Price [ per person costs only] ] \hfill \\
+	This almost the same price as above but including the per person 
+	costs only (You have correctly colored your packages above, do you?) - we'll
+	need these two different values later.
+\end{description}
+
+\section{Planning}
+
+Planning happens before the convention to find the correct price for your 
+classes. At the end of the planning phase, you will have your base price 
+settled.
+
+Before going into the planning tab you must define your expected expenditures. 
+On the 'Expenditure' sheet there are two tables. One for fix costs the other for 
+per person costs. On the latter, you end up listing all the items you defined as 
+per person cost packages with their respective price as value. However, this time 
+you will need it for the final accounting, so you can leave out the amount (as 
+you don't know the final number yet) and ignore the total price for now.
+
+More important are the fix costs you are about to expect. This may include 
+salary for trainers, drinks, breakfast, audio equipment, dinner, lunch, etc. and 
+don't forget the miscellaneous item as this is were all the random things end up 
+you forget in the early planning. Now there are two columns following each item. 
+The first is the value you plan to spend for this item and the second column is 
+used later for the actual accounting. 
+
+Preparation for planning is done. On the 'Planning' sheet you will see the 
+classes and the expenditure automatically appear with their assigned values. On 
+the lower right table you may enter additional income, such as sponsoring. Next 
+up is probably the most important step of the planning phase. It's time to find 
+the price for each fee class. First is, you enter the amount of expected 
+participants in the lower right table on the 'Planning' sheet. 
+This step is a bit tricky as 
+you might not know how much people will attend for sure. You must define a 
+number of attendees at which you will make profit and if fewer attend you end up 
+paying for your own convention. It is better to calculate with less people 
+attending than you are actually hoping to come.
+Second is to modify the 'Base Price' value on the 'Fee' sheet. Raise or lower 
+the value to fit your needs, your fee classes are settled now - hooray!
+
+\section{Managing your Participants}
+
+On the 'Participants' page you can add all the participants of your convention. 
+Age and Sex are two formal columns, feel free to fill them out. On the 
+registration columns, select the class for the participant and the appropriate 
+fee will appear. Fill in the paid column when you receive a payment and the 
+balance column indicates if the participants has fullfilled his payment duties.
+
+\section{Final Accounting}
+
+TODO: What needs to be done after the convention.
+
 \chapter{Freestyle Convention}
 
 The concept for a freestyle convention was invented by Felix Dietze and Thomas 
-Gossmann. Mainly because at that time there were only freestyler competitions.
+Gossmann. Mainly because at that time there were only freestyle competitions.
 At competitions only one or two riders are performing while the others aren't 
 allowed to. We wanted the opposite, we wanted a gym full of freestylers riding, 
 laughing, learning, talking and sharing unicycling with each other. That's why 
-we invented the concept for a freestyle convention.
+we invented the concept of a freestyle convention.
 
-The more you need to organize as a participant the less likely people are 
-joining. From other conventions we identified two things we wanted to neglect 
-for the freestyle convention.
+The more a participant needs to organize for a convention, aside from registration, 
+the less likely people are willed to join. From other conventions we identified two 
+things we wanted to neglect for the freestyle convention.
 First is the need to manage your over-night stay on your own. In our opinion the 
 host should provide accommodation. As freestylers we often declare gyms as our 
 home and providing a place in a gym for your mattress and sleeping bag is 
 sufficient enough. Also people stay in one place and socialize in the evening.
-Second is food: When people need to manage their food on their own, they form 
+Second is food: When people need to manage food on their own, they form 
 groups to organize something but a good friend sometimes is left out just because 
 he wasn't at the right place at the right time. In our opinion the food is 
-provided by the host, keeping people together let them eat all at the same time 
-which will lead to more time they can spent together with many others on their 
-unicycles.
+provided by the host, keeping people together let them eat all at the same time. 
+In total this will lead to more time participants can spent with each other.
 
 \section{Freestyle Convention Guidelines}
 
 That leads us to the creation of guidelines for a freestyle convention:
 
 \begin{itemize}
-	\item Host provides a sleeping place (a gym is absolutely fine)
+	\item Host provides a place to sleep (a gym is absolutely fine)
 	\item Host provides food, this includes breakfast, lunch and dinner
 	\item Host provides drinks (water is absolutely fine; more is bonus)
 	\item A weekend full of workshops, because riders are coming to learn from 
 	others
-	\item No official competitions (though, small and funny ones in form of 
-	workshops are allowed)
+	\item No official competitions (though, small, spontaneous and funny ones in 
+	form of workshops are allowed)
 \end{itemize}
 
 \end{document}
